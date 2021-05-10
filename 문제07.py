@@ -1,14 +1,17 @@
-
-# def solution(sentence):
-#     str = ''
-#     for c in sentence:
-#         if c != '.' or c != ' ':
-#             str += c
-#     size = len(str)
-#     for i in range(size // 2):
-#         if str[i] != str[size - 1 - i]:
-#             return False
-#     return True
+# for i in range(len(a)//2):
+#     if a[i] != a[len(a)-1 -i]:
+#         print("펠린드롬이 아니다")
+# print("펠린드롬이다")
+def solution(sentence):
+    str = ''
+    for c in sentence:
+        if c != '.' and c != ' ':
+            str += c
+    size = len(str)
+    for i in range(size // 2):
+        if str[i] != str[size - 1 - i]:
+            return False
+    return True
 
 
 
