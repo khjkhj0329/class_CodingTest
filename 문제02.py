@@ -1,7 +1,8 @@
+# 1월 1일로부터 며칠만큼 떨어져 있는지 구합니다.
 def 보조함수(month, day):
    month_list = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
    total = 0;
-   for i in range(month -1):
+   for i in range(month -1): #for(int i = 0; i < month-1; i++)
        total += month_list[i]
    total += day
    return total - 1
